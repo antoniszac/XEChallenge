@@ -14,8 +14,12 @@ For example when searching for area "Νίκαια" 15 options are offered by aut
 
 Tests:
 Run the SearchAreaTest.java as TestNG test to execute the test with a chrome browser
+
 Run the SearchAreaTestFirefox.java as TestNG test to execute the test with a firefox browser
+
 Run the SearchAreaTestEdge.java as TestNG test to execute the test with the new Microsoft Edge browser
+
+
 
 
 How to use:
@@ -33,3 +37,5 @@ e.g xeSearchObjects.countPictures(3)
 
 To verify the functionality of the sort results change the locator for priceDescending in the XeSearchResultsProjectsObjects.java to 
 By priceDescending = By.cssSelector("div[class='close_on_mouseup sortDropdown']>ul>li:nth-child(3)");
+
+***Attached is a test-output.zip folder where you can see the results by opening the emailable-report.html
