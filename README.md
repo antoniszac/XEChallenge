@@ -13,9 +13,13 @@ When searching for an area all the related option that are offered from autocomp
 For example when searching for area "Νίκαια" 15 options are offered by autocomplete. The script selects all of them
 
 Tests:
+
 Run the SearchAreaTest.java as TestNG test to execute the test with a chrome browser
+
 Run the SearchAreaTestFirefox.java as TestNG test to execute the test with a firefox browser
+
 Run the SearchAreaTestEdge.java as TestNG test to execute the test with the new Microsoft Edge browser
+
 
 
 
