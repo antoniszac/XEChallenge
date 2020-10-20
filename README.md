@@ -37,3 +37,5 @@ e.g xeSearchObjects.countPictures(3)
 
 To verify the functionality of the sort results change the locator for priceDescending in the XeSearchResultsProjectsObjects.java to 
 By priceDescending = By.cssSelector("div[class='close_on_mouseup sortDropdown']>ul>li:nth-child(3)");
+
+***Attached is a test-output.zip folder where you can see the results by opening the emailable-report.html
