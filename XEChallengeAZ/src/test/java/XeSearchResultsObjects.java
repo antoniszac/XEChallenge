@@ -1,7 +1,6 @@
 import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -76,8 +75,6 @@ public class XeSearchResultsObjects {
 
 	//Method to verify results are within the price range
 	public void verifyPriceResults(String lowPrice, String highPrice) {
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		//Get the number of results on page
 		List<WebElement> pageResults = driver.findElements(searchResults);
@@ -95,8 +92,6 @@ public class XeSearchResultsObjects {
 
 	//Method to verify results are within the square footage range
 	public void verifySqFootageResults(String sqFootageFrom, String sqFootageTo) {
-		
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 		//Get the number of results on page
 		List<WebElement> pageResults = driver.findElements(searchResults);
@@ -116,7 +111,7 @@ public class XeSearchResultsObjects {
 
 	//Method to go to the next page
 	public void pressNextPage() {
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", driver.findElement(nextPage));
 	}
@@ -124,7 +119,7 @@ public class XeSearchResultsObjects {
 	//Method to calculate the total number of pages by
 	//dividing the total number of results with the max number of results per page, which is 24 
 	public int calcNoPages() {
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
 		String totalResultsFound = driver.findElement(totalResults).getText();
 		String totalResultsString = StringUtils.substringBefore(totalResultsFound , " ακίνητ");
 		int totalResultsNumber= Integer.parseInt(totalResultsString);
@@ -136,7 +131,7 @@ public class XeSearchResultsObjects {
 
 	//Method to validate the number of pictures per ad does not exceeds a predefined limit
 	public void countPictures(int maxNumberOfPictures) {
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
 		System.out.println("Counting number of images per ad");
 		List<WebElement> pageResults = driver.findElements(searchResults);
 		for(int i = 0; i<pageResults.size();i++) {
@@ -155,7 +150,7 @@ public class XeSearchResultsObjects {
 	//Method to verify search results are correctly sorted	
 	public void verifySortResults() {
 		//take the values for price from webelement and parse it to new list
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		ArrayList<Integer> obtainedValues = new ArrayList<Integer>();	
 		List<WebElement> pageResults = driver.findElements(searchResults);
 		for(int i = 0; i<pageResults.size();i++) {
