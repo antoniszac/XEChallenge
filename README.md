@@ -18,6 +18,7 @@ Run the SearchAreaTestFirefox.java as TestNG test to execute the test with a fir
 Run the SearchAreaTestEdge.java as TestNG test to execute the test with the new Microsoft Edge browser
 
 
+
 How to use:
 Before running the test select the search area you desire. 
 Set the price value range and the square footage range
