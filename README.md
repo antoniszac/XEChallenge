@@ -22,8 +22,6 @@ How to use:
 Before running the test select the search area you desire. 
 Set the price value range and the square footage range
 
-Run the SearchAreaTest.java as TestNG test
-
 To verify the functioanlity of price results set a value in the xeSearchObjects.verifyPriceResults out of the price range 
 e.g xeSearchObjects.verifyPriceResults(690,700)
 
