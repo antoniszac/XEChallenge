@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-20T19:43:35 EEST" name="Default suite" finished-at="2020-10-20T19:46:24 EEST" duration-ms="169041">
+  <suite started-at="2020-10-20T20:44:55 EEST" name="Default suite" finished-at="2020-10-20T20:47:26 EEST" duration-ms="151450">
     <groups>
     </groups>
-    <test started-at="2020-10-20T19:43:35 EEST" name="Default test" finished-at="2020-10-20T19:46:24 EEST" duration-ms="169041">
-      <class name="SearchAreaTestEdge">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:43:35 EEST" name="setupDriver" finished-at="2020-10-20T19:44:03 EEST" duration-ms="28052" status="PASS">
+    <test started-at="2020-10-20T20:44:55 EEST" name="Default test" finished-at="2020-10-20T20:47:26 EEST" duration-ms="151450">
+      <class name="SearchAreaTestFirefox">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:44:55 EEST" name="setupDriver" finished-at="2020-10-20T20:45:03 EEST" duration-ms="7948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="propertySearch()[pri:1, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:44:03 EEST" name="propertySearch" description="This method searches for rent ads for the given area and all related areas" finished-at="2020-10-20T19:44:25 EEST" duration-ms="21798" status="PASS">
+        <test-method signature="propertySearch()[pri:1, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:45:03 EEST" name="propertySearch" description="This method searches for rent ads for the given area and all related areas" finished-at="2020-10-20T20:45:23 EEST" duration-ms="20368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- propertySearch -->
-        <test-method signature="setSearchCriteria()[pri:2, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:44:25 EEST" name="setSearchCriteria" description="This method sets the search criteria for price range and square footage range" finished-at="2020-10-20T19:44:30 EEST" duration-ms="5261" status="PASS">
+        <test-method signature="setSearchCriteria()[pri:2, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:45:23 EEST" name="setSearchCriteria" description="This method sets the search criteria for price range and square footage range" finished-at="2020-10-20T20:45:39 EEST" duration-ms="15299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setSearchCriteria -->
-        <test-method signature="verifySearchResults()[pri:3, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:44:30 EEST" name="verifySearchResults" description="This method validates the search results are within the price range, square footage range and no ad exceeds number of pictures" finished-at="2020-10-20T19:45:25 EEST" duration-ms="55323" status="PASS">
+        <test-method signature="verifySearchResults()[pri:3, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:45:39 EEST" name="verifySearchResults" description="This method validates the search results are within the price range, square footage range and no ad exceeds number of pictures" finished-at="2020-10-20T20:46:25 EEST" duration-ms="46576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResults -->
-        <test-method signature="verifyResultsSortedCorrectly()[pri:4, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:45:25 EEST" name="verifyResultsSortedCorrectly" description="This method sorts the search results by descending price and verifies the results are correctly sorted" finished-at="2020-10-20T19:46:17 EEST" duration-ms="51750" status="PASS">
+        <test-method signature="verifyResultsSortedCorrectly()[pri:4, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:46:25 EEST" name="verifyResultsSortedCorrectly" description="This method sorts the search results by descending price and verifies the results are correctly sorted" finished-at="2020-10-20T20:47:18 EEST" duration-ms="52427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultsSortedCorrectly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SearchAreaTestEdge@4470f8a6]" started-at="2020-10-20T19:46:17 EEST" name="tearDown" finished-at="2020-10-20T19:46:24 EEST" duration-ms="6775" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SearchAreaTestFirefox@4470f8a6]" started-at="2020-10-20T20:47:18 EEST" name="tearDown" finished-at="2020-10-20T20:47:26 EEST" duration-ms="8767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- SearchAreaTestEdge -->
+      </class> <!-- SearchAreaTestFirefox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

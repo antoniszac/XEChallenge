@@ -67,6 +67,7 @@ public class SearchAreaTestFirefox {
 			+ "and no ad exceeds number of pictures")
 	public void verifySearchResults() throws InterruptedException {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();
 
@@ -104,6 +105,8 @@ public class SearchAreaTestFirefox {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
 
 		xeSearchObjects.sortSearchResults();
+		
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();
 

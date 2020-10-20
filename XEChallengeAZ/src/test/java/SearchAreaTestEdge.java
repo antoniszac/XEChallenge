@@ -32,7 +32,6 @@ public class SearchAreaTestEdge {
 		
 		WebDriverManager.edgedriver().setup();
 		driver = new EdgeDriver();
-
 	}
 
 	@Test(priority=1, description="This method searches for rent ads for the given area and all related areas")
@@ -68,6 +67,7 @@ public class SearchAreaTestEdge {
 			+ "and no ad exceeds number of pictures")
 	public void verifySearchResults() throws InterruptedException {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();
 
@@ -105,6 +105,8 @@ public class SearchAreaTestEdge {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
 
 		xeSearchObjects.sortSearchResults();
+		
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();
 

@@ -1,4 +1,3 @@
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -68,6 +67,7 @@ public class SearchAreaTest {
 			+ "and no ad exceeds number of pictures")
 	public void verifySearchResults() throws InterruptedException {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();		
 
@@ -105,6 +105,8 @@ public class SearchAreaTest {
 		XeSearchResultsObjects xeSearchObjects = new XeSearchResultsObjects(driver);
 
 		xeSearchObjects.sortSearchResults();
+		
+		Thread.sleep(1000);
 
 		int pages = xeSearchObjects.calcNoPages();
 
